@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF → JPG 변환기</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF → JPG 변환기</h1>
+        <form id="upload-form" method="post" action="/convert" enctype="multipart/form-data">
+            <label for="pdf-file">PDF 파일 선택:</label>
+            <input type="file" id="pdf-file" name="pdf_file" accept=".pdf" required>
+            <button type="submit">변환하기</button>
+        </form>
+
+        <div id="result-section" style="display: none;">
+            <h2>변환된 이미지</h2>
+            <div id="image-list"></div>
+            <a id="download-all" href="#" download>모두 다운로드</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

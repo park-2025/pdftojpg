@@ -1,0 +1,102 @@
+/* 기본 배경과 폰트 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+    color: #2d3436;
+}
+
+/* 메인 컨테이너 */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffffcc;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 4px dashed #fd79a8;
+}
+
+/* 제목 */
+.container h1 {
+    font-size: 2rem;
+    color: #d63031;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #fab1a0;
+}
+
+/* 파일 업로드 영역 */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0984e3;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 2px dashed #00cec9;
+    border-radius: 10px;
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+
+/* 변환 버튼 */
+button[type="submit"] {
+    background-color: #fdcb6e;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #2d3436;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffeaa7;
+    transform: scale(1.05);
+}
+
+/* 결과 영역 */
+#result-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #6c5ce7;
+}
+
+#result-section h2 {
+    font-size: 1.5rem;
+    color: #6c5ce7;
+}
+
+/* 변환된 이미지 리스트 */
+#image-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 다운로드 링크 */
+#download-all {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #74b9ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#download-all:hover {
+    background-color: #a29bfe;
+    transform: translateY(-3px);
+}
